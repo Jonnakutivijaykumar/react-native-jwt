@@ -171,7 +171,7 @@ function base64urlUnescape(str) {
 }
 
 function base64urlEncode(str) {
-  return base64.encode(str);
+  return base64urlEscape(base64.encode(str));
 }
 
 function base64urlEscape(str) {
